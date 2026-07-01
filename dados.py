@@ -42,4 +42,11 @@ def clean_telemetry(telemetria: pd.DataFrame) -> pd.DataFrame:
     return telemetria
 
 #Feature Engineering
-def feature_engineering(voltas: pd.DataFrame) -> pd.DataFrame
+def feature_engineering(voltas: pd.DataFrame) -> pd.DataFrame:
+    #Delta percentual em relação a volta mais rápida
+    #Taxa de degração do pneu por piloto e composto
+    def calcular_desgaste():
+    
+    #Normalização do tempo de volta para comparar entre os pilotos
+    #Classificação da volta de acordo com a performance
+    
