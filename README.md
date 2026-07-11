@@ -55,7 +55,7 @@ cd projeto_f1
 python -m venv venv
 
 # Ativar — Windows
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 
 # Ativar — Linux / macOS
 source venv/bin/activate
