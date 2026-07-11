@@ -113,10 +113,10 @@ streamlit>=1.35.0
 |---|---|
 | 📊 Indicadores Gerais | Volta mais rápida, piloto destaque, compound mais usado |
 | ⏱️ Evolução por Volta | Linha do tempo dos tempos de cada piloto |
-| 🔴 Degradação por Compound | Dispersão + linha de tendência (regressão linear) por tipo de pneu |
-| 📉 Taxa Média de Degradação | Comparativo em barras: segundos perdidos por volta por compound |
+| 🔴 Degradação por Composto | Dispersão + linha de tendência (regressão linear) por tipo de pneu |
+| 📉 Taxa Média de Degradação | Comparativo em barras: segundos perdidos por volta por composto |
 | 🗺️ Mapa de Velocidade | Visualização da pista colorida por velocidade (telemetria) |
-| 📦 Distribuição de Performance | Categorização das voltas por quartil (Elite / Boa / Regular / Lenta) |
+| 📦 Distribuição de Performance | Categorização das voltas por quartil (Ótima / Boa / Regular / Lenta) |
 | 💡 Insights FSAE | Conclusões aplicadas às provas da Fórmula SAE |
 
 ---
@@ -126,9 +126,9 @@ streamlit>=1.35.0
 | Feature | Origem | Método |
 |---|---|---|
 | `LapTime_s` | conversão de `timedelta` | `dt.total_seconds()` + `np.float64` |
-| `DeltaToBest_pct` | diferença percentual para a melhor volta | divisão vetorizada com `numpy` |
-| `TyreDegRate` | taxa de desgaste do pneu por volta | `np.polyfit` (regressão linear) |
-| `LapTime_norm` | normalização 0–1 do tempo de volta | normalização min-max com `numpy` |
+| `DeltaPercetual_EmRelacaoAoMelhorTempo` | diferença percentual para a melhor volta | divisão vetorizada com `numpy` |
+| `TyreDegradationRate` | taxa de desgaste do pneu por volta | `np.polyfit` (regressão linear) |
+| `LapTime_normalizado` | normalização 0–1 do tempo de volta | normalização min-max com `numpy` |
 | `PerformanceTier` | classificação por quartil | `pd.qcut` com 4 categorias |
 
 ---
